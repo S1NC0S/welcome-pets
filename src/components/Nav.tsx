@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "../pages/Home/Logo/Logo";
 import { Button } from "./ui/button";
 
 export default function Nav() {
@@ -7,16 +7,14 @@ export default function Nav() {
       <div className="h-full flex items-center">
         <Logo className="h-full" />
       </div>
-      <div className="h-full items-center flex flex-wrap font-semibold text-red gap-x-4">
+      <div className="h-full items-center flex flex-wrap font-semibold text-wp-red gap-x-4">
         {["Adopters", "Guardians", "Help", "FAQ"].map((item, i) => (
           <div key={i}>{item}</div>
         ))}
       </div>
-      <div className="h-full items-center flex flex-wrap gap-x-3">
+      <div className="h-full items-center flex flex-wrap gap-2">
         <Button className="px-6 font-semibold tracking-wide">Sign In</Button>
-        <Button className="px-6 font-semibold bg-red hover:bg-white tracking-wide">
-          Register
-        </Button>
+        <Button className="px-6 font-semibold tracking-wide">Register</Button>
       </div>
     </nav>
   );

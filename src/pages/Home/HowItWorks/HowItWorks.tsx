@@ -5,7 +5,7 @@ import three from "./assets/3.png";
 
 export default function HowItWorks() {
   return (
-    <div className="relative py-16 bg-[#e1e10b] bg-opacity-50 text-[#424242]">
+    <div className="relative py-16 px-8 bg-[#e1e10b] bg-opacity-50 text-[#424242]">
       {/* pattern */}
       <div
         className="absolute h-full w-full top-0 left-0 opacity-40"
@@ -15,10 +15,10 @@ export default function HowItWorks() {
         }}
       ></div>
       <div className="relative z-50">
-        <h2 className="text-center text-5xl text-red font-bold mb-16">
+        <h2 className="text-center text-5xl text-wp-red font-bold mb-16">
           How It Works
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1000px] mx-auto gap-x-16 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1000px] mx-auto gap-16 text-center">
           {/* ITEM 1 */}
           <div className="">
             <div className="mt-6 bg-[#FFE10B] h-20 w-20 rounded-full border-2 border-[#000] mx-auto mb-4 flex justify-center items-center p-3">
@@ -32,12 +32,12 @@ export default function HowItWorks() {
               pets. Use our intuitive search filters to narrow down your
               preferences.
             </div>
-            <div className="inline-block mt-6  rounded-lg border-2 border-red text-red capitalize bg-white px-4 py-2 font-medium shadow-md">
+            <div className="inline-block mt-6  rounded-lg border-2 border-red text-wp-red capitalize bg-white px-4 py-2 font-medium shadow-md">
               Browse available pets
             </div>
           </div>
           {/* ITEM 2 */}
-          <div className="max-w-[250px]">
+          <div className="max-w-[250px] mx-auto">
             <div className="bg-[#FFE10B] h-20 w-20 rounded-full border-2 border-[#000] mx-auto mb-4 flex justify-center items-center p-3">
               <img src={two} />
             </div>
@@ -48,12 +48,12 @@ export default function HowItWorks() {
               vet, will conduct a thorough vet check to ensure a happy and
               healthy home for your new companion.
             </div>
-            <div className="inline-block mt-6  rounded-lg border-2 border-red text-red capitalize bg-white px-4 py-2 font-medium shadow-md">
+            <div className="inline-block mt-6  rounded-lg border-2 border-red text-wp-red capitalize bg-white px-4 py-2 font-medium shadow-md">
               Submit your application
             </div>
           </div>
           {/* ITEM 3 */}
-          <div className="max-w-[250px]">
+          <div className="max-w-[250px] mx-auto">
             <div className="mt-6 bg-[#FFE10B] h-20 w-20 rounded-full border-2 border-[#000] mx-auto mb-4 flex justify-center items-center p-3">
               <img src={three} />
             </div>
@@ -63,7 +63,7 @@ export default function HowItWorks() {
               approved, you'll be ready to welcome your new furry family member.
               Join our community and share your joyous adoption story!
             </div>
-            <div className="inline-block mt-6  rounded-lg border-2 border-red text-red capitalize bg-white px-4 py-2 font-medium shadow-md">
+            <div className="inline-block mt-6  rounded-lg border-2 border-red text-wp-red capitalize bg-white px-4 py-2 font-medium shadow-md">
               Share your joy
             </div>
           </div>

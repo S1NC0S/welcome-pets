@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 // module.exports = {
+
+import tailwindAnimate from "tailwindcss-animate";
 export default {
   darkMode: ["class"],
   content: [
@@ -22,7 +24,10 @@ export default {
         fredoka: ["Fredoka", "Helvetica", "sans-serif"],
       },
       colors: {
-        red: "#E74B4C",
+        "wp-red": "#E74B4C",
+        "wp-yellow": "#F0F084",
+        "wp-gray": "#424242",
+        "wp-white": "#FFF6F2",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -78,5 +83,5 @@ export default {
       },
     },
   },
-  // plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindAnimate],
 };
